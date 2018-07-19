@@ -1,21 +1,35 @@
 {
-    "name": "webpack-4-snippets",
-    "displayName": "Webpack 4 Snippets",
-    "description": "Webpack 4 Snippets",
-    "version": "0.0.1",
-    "publisher": "fwgood",
-    "engines": {
-        "vscode": "^1.25.0"
-    },
-    "categories": [
-        "Snippets"
-    ],
-    "contributes": {
-        "snippets": [
-            {
-                "language": "javascript",
-                "path": "./snippets/snippets.json"
-            }
-        ]
-    }
+  "name": "webpack-4-snippets",
+  "displayName": "Webpack 4 Snippets",
+  "description": "Webpack 4 Snippets",
+  "version": "0.0.1",
+  "publisher": "fwgood",
+  "engines": {
+    "vscode": "^1.25.0"
+  },
+  "repository":{
+    "type": "git",
+    "url": "https://github.com/fwgood/webpack4-snippets.git",
+  } ,
+  "categories": [
+    "Snippets"
+  ],
+  "icon": "icon.png",
+"keywords": [
+  "webpack",
+  "webpack4",
+  "snippets"
+],
+"license": "MIT",
+"bugs": {
+  "url": "https://github.com/fwgood/webpack4-snippets/issues"
+},
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/snippets.json"
+      }
+    ]
+  }
 }
