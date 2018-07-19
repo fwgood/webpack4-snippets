@@ -9,7 +9,7 @@
   },
   "repository":{
     "type": "git",
-    "url": "https://github.com/fwgood/webpack4-snippets.git",
+    "url": "https://github.com/fwgood/webpack4-snippets.git"
   } ,
   "categories": [
     "Snippets"
