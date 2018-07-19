@@ -1,0 +1,91 @@
+{
+  "template": {
+    "prefix": "wp4-template",
+    "body": [
+      "module.exports = {",
+      "\tentry: {",
+      "\t\tvendor: \"./src/index.js$0\"",
+      "\t},",
+      "\tmode: \"development\",",
+      "\tmodule: {",
+      "\t\trules: []",
+      "\t},",
+      "\tplugins: [],",
+      "\toutput: {",
+      "\t\t$1filename: \"bundle.js\",",
+      "\t\tpath: path.resolve(__dirname,\"dist\")",
+      "\t},",
+      "}"
+    ],
+    "description": "For Loop"
+  },
+  "dev-server": {
+    "prefix": "wp4-dev-server",
+    "body": ["devServer: {", "\tcontentBase: \"./dist\",", "\thot: true", "},"]
+  },
+  "source-map": {
+    "prefix": "wp4-source-map",
+    "body": ["devtool: \"source-map\""]
+  },
+  "inline-source-map": {
+    "prefix": "wp4-inline-source-map",
+    "body": ["devtool: \"inline-source-map\""]
+  },
+  "babel-loader": {
+    "prefix": "wp4-babel-loader",
+    "body": [
+      "{",
+      "\ttest: /.js$/,",
+      "\tuse: {",
+      "\t\tloader: \"babel-loader\",",
+      "\t\toptions: {",
+      "\t\t\tpresets: [\"stage-0\", \"react\"],",
+      "\t\t\tplugins: [$0]",
+      "\t\t}",
+      "\t}",
+      "}"
+    ]
+  },
+  "css-loader": {
+    "prefix": "wp4-css-loader",
+    "body": [
+      "{",
+      "\ttest: /.css$/,",
+      "\tuse: [\"style-loader\",\"css-loader\"]",
+      "}"
+    ]
+  },
+  "optimization": {
+    "prefix": "wp4-optimization",
+    "body": [
+      "optimization: {",
+      "\tsplitChunks: {",
+      "\t\tcacheGroups: {",
+      "\t\t\tcommons: {",
+      "\t\t\t\tname: \"commons\",",
+      "\t\t\t\tchunks: \"initial\"",
+      "\t\t\t}",
+      "\t\t}",
+      "\t}",
+      "},"
+    ]
+  },
+  "requireHTMLPlugin": {
+    "prefix": "wp4-requireHTMLPlugin",
+    "body": ["var HTMLWebpackPlugin = require(\"html-webpack-plugin\");"]
+  },
+  "requireCleanPlugin": {
+    "prefix": "wp4-requireCleanPlugin",
+    "body": ["var CleanWebpackPlugin = require(\"clean-webpack-plugin\");"]
+  },
+  "cleanPlugin": {
+    "prefix": "wp4-clean-plugin",
+    "body": ["new CleanWebpackPlugin([\"dist\"]),"]
+  },
+  "HTMLPlugin": {
+    "prefix": "wp4-html-plugin",
+    "body": [
+      "new HTMLWebpackPlugin({ title: \"$0Title\", template: \"./src/index.html\" }),"
+    ]
+  }
+}
