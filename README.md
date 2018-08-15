@@ -11,3 +11,5 @@
 - wp4-requireCleanPlugin
 - wp4-clean-plugin
 - wp4-html-plugin
+- wp4-ts-loader
+- wp4-resolve

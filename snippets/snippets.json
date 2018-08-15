@@ -29,7 +29,11 @@
   },
   "inline-source-map": {
     "prefix": "wp4-inline-source-map",
-    "body": ["devtool: \"inline-source-map\""]
+    "body": ["devtool: \"inline-source-map\","]
+  },
+  "resolve": {
+    "prefix": "wp4-reolve",
+    "body": ["resolve:{", "\textensions: ['.js','jsx','.ts', '.tsx' ]", "}"]
   },
   "babel-loader": {
     "prefix": "wp4-babel-loader",
@@ -54,6 +58,10 @@
       "\tuse: [\"style-loader\",\"css-loader\"]",
       "}"
     ]
+  },
+  "ts-loader": {
+    "prefix": "wp4-ts-loader",
+    "body": ["{", "\ttest: /\\.tsx?$/,", "\tloader: 'ts-loader'", "}"]
   },
   "optimization": {
     "prefix": "wp4-optimization",
